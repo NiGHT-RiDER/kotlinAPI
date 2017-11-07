@@ -1,0 +1,37 @@
+curl -H  "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5EbEJNRUUwUmpjM1F6bEZSakpDUkRRMFFqWkJSVFJHUlRORlF6WkVRelJEUWpZMU1VSTFNZyJ9.eyJpc3MiOiJodHRwczovL25pZ2h0LXJpZGVyLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1YTAyMjAyOWY0NDAxZDAxYmFiMWE1NGEiLCJhdWQiOiJ
+rb3RsaW4tYXBpIiwiaWF0IjoxNTEwMDg4OTY1LCJleHAiOjE1MTAxNzUzNjUsImF6cCI6IlZ4a1o0RjJKNGliWkNVeG1mMGRLTlB5VTJkVllwd0ZmIiwiZ3R5IjoicGFzc3dvcmQifQ.E0rAktsABWj46oYQdyOpsvfEqloYKHjfYcdVl8u-RWT7Nd40SMkH36qrMaWl7kB-WNTAQb6GkuYL_5cwGMG07LYnvxeADARhDzGpoyEWWS3LU4aXmAk10A9drwC5-Sgs9Zk3
+vytW8bN7YOyeoaXUppnR1G7UIWsZWHWsKQLJuf8MvyAd0T3iqTI5PaxkjzrhYBbul1r6uCvN-vTnp4PXTd1emV8g4GYTvpAwlS4bw6aJP1T8AOWuWnrRcM-CQ4iTUi094zZn9E98AYS3CZXrNlkuQCIYBVV3knlG87Oyg0x8l3_3bgukp34t3kHh0NpJyLWxf_9cPIXiBstOxrrg1g" http://localhost:8080/customer
+curl "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5EbEJNRUUwUmpjM1F6bEZSakpDUkRRMFFqWkJSVFJHUlRORlF6WkVRelJEUWpZMU1VSTFNZyJ9.eyJpc3MiOiJodHRwczovL25pZ2h0LXJpZGVyLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1YTAyMjAyOWY0NDAxZDAxYmFiMWE1NGEiLCJhdWQiOiJrb3R
+saW4tYXBpIiwiaWF0IjoxNTEwMDg4OTY1LCJleHAiOjE1MTAxNzUzNjUsImF6cCI6IlZ4a1o0RjJKNGliWkNVeG1mMGRLTlB5VTJkVllwd0ZmIiwiZ3R5IjoicGFzc3dvcmQifQ.E0rAktsABWj46oYQdyOpsvfEqloYKHjfYcdVl8u-RWT7Nd40SMkH36qrMaWl7kB-WNTAQb6GkuYL_5cwGMG07LYnvxeADARhDzGpoyEWWS3LU4aXmAk10A9drwC5-Sgs9Zk3vytW8bN7YOyeoaXUppnR1G7UIWsZWHWsKQLJuf8MvyAd0T3iqTI5PaxkjzrhYBbul1r6uCvN-vTnp4PXTd1emV8g4GYTvpAwlS4bw6aJP1T8AOWuWnrRcM-CQ4iTUi094zZn9E98AYS3CZXrNlkuQCIYBVV3knlG87Oyg0x8l3_3bgukp34t3kHh0NpJyLWxf_9cPIXiBstOxrrg1g" -H http://localhost:8080/customer
+curl http://localhost:8080/customer
+curl -H "Content-Type: application/json" -X POST -d '{
+ "grant_type":"password",
+ "username": "nightrider@cock.li",
+ "password": "123123",
+ "audience": "kotlin-api",
+ "client_id": "VxkZ4F2J4ibZCUxmf0dKNPyU2dVYpwFf",
+ "client_secret": "zHFmILV8IEsfWnjXkkPZOuevtijI2RNrTz6w-H95cMO2ttGU6iE10KuQFX2X41Ae"
+}' https://night-rider.eu.auth0.com/oauth/token
+curl -H "Content-Type: application/json" -X POST -d '{
+ "grant_type":"password",
+ "username": "nightrider@cock.li",
+ "password": "123123",
+ "audience": "kotlin-api",
+ "client_id": "VxkZ4F2J4ibZCUxmf0dKNPyU2dVYpwFf",
+ "client_secret": "Hx4eFNAT8TI2TUVDXhxWDJ8vWpZxt79DQYUl7e178Uw0ASfc7eY42zPf2H-Gv1n1"
+}' https://night-rider.eu.auth0.com/oauth/token
+curl -H "Content-Type: application/json" -X POST -d '{
+ "client_id": "VxkZ4F2J4ibZCUxmf0dKNPyU2dVYpwFf",
+ "email": "nightrider@cock.li",
+ "password": "123123",
+ "connection": "Username-Password-Authentication"
+}' https://night-rider.eu.auth0.com/dbconnections/signup
+curl -H "Content-Type: application/json" -X POST -d '{
+ "client_id": "hfs2Au7Zka9XYbXs0CRpdmaL33IKy4mA",
+ "email": "nightrider@cock.li",
+ "password": "123123",
+ "connection": "Username-Password-Authentication"
+}' https://night-rider.eu.auth0.com/dbconnections/signup
+cd kotlin-spring-boot/
+git clone https://github.com/auth0-blog/kotlin-spring-boot/
+cd Developer/
